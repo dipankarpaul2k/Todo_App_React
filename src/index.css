@@ -1,0 +1,126 @@
+/* Tooltip */
+
+[data-tooltip]:not(a, button, input) {
+  border-bottom: none;
+  cursor: default;
+}
+
+/* tooltip */
+
+/* Navbar */
+
+nav {
+  padding: 0;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+/* nav ul {
+  margin-left: 0;
+  margin-right: 0;
+} */
+
+.nav_logo {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  /* .nav_logo span{
+    display: none;
+  } */
+  /* nav {
+    padding: 0;
+    padding-right: 5px;
+  } */
+}
+
+nav ul li:hover {
+  background-color: unset;
+}
+
+@media (min-width: 768px) {
+  .nav_logo {
+    font-size: 26px;
+  }
+}
+
+/* navbar */
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 70% auto;
+  }
+}
+
+.form_btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.summary_heading {
+  font-weight: 500;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  width: 100%;
+  border-radius: 5px;
+  list-style: none;
+}
+
+ul li details {
+  width: 100%;
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.todo_list_item summary {
+  border: none;
+}
+
+.todo_content {
+  padding-bottom: 14px;
+}
+
+.todo_content p {
+  margin-left: 1rem;
+}
+
+ul li:hover {
+  background-color: #ffffff33;
+}
+
+/* list buttons */
+
+.list_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem 0 0;
+  padding: 0 10px;
+}
+
+.list_btns button {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .list_btns button {
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  .list_btns button span {
+    display: none;
+  }
+}
