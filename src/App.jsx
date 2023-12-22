@@ -32,13 +32,13 @@ const App = () => {
     setNewUser(userName);
     const storedTodos = fetchTodos("todos") || [];
     setTodos(storedTodos);
-  }, []);
-
-  useEffect(() => {
-    const userName = JSON.parse(localStorage.getItem("userName"));
-    console.log("2 userName: ", userName);
-    setNewUser(userName);
   }, [isNewUser]);
+
+  // useEffect(() => {
+  //   const userName = JSON.parse(localStorage.getItem("userName"));
+  //   console.log("2 userName: ", userName);
+  //   setNewUser(userName);
+  // }, [isNewUser]);
 
   // Check if new user exists or not
   const toggleIsNewUser = () => {
@@ -108,7 +108,7 @@ const App = () => {
         <NavBar theme={theme} toggleTheme={toggleTheme} />
         {newUser ? (
           <div>
-            <h1>
+            <h1 className="welcome_heading">
               Welcome back, <span className="accent">{newUser}</span>
             </h1>
             {/* Todo form */}

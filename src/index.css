@@ -44,6 +44,10 @@ nav ul li:hover {
 
 /* Intro */
 
+.welcome_heading{
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: 70% auto;
