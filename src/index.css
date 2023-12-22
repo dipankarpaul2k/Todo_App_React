@@ -15,23 +15,9 @@ nav {
   padding-right: 1px;
 }
 
-/* nav ul {
-  margin-left: 0;
-  margin-right: 0;
-} */
-
 .nav_logo {
   font-size: 1.2rem;
-}
-
-@media (max-width: 768px) {
-  /* .nav_logo span{
-    display: none;
-  } */
-  /* nav {
-    padding: 0;
-    padding-right: 5px;
-  } */
+  color: var(--primary);
 }
 
 nav ul li:hover {
@@ -46,6 +32,18 @@ nav ul li:hover {
 
 /* navbar */
 
+/* Intro */
+.accent {
+  color: var(--primary);
+}
+
+.create_user_btn span {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* Intro */
+
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: 70% auto;
@@ -55,6 +53,7 @@ nav ul li:hover {
 .form_btns {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   gap: 10px;
 }
 
@@ -123,4 +122,14 @@ ul li:hover {
   .list_btns button span {
     display: none;
   }
+}
+
+/* React Toastify */
+.Toastify__close-button {
+  width: fit-content;
+  padding-right: 8px;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--info {
+  background-color: var(--primary);
 }
